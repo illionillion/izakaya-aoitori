@@ -4,11 +4,13 @@ class HeaderComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <header>
-        <h1>青い鳥</h1>
-        <p>おいしい料理と楽しいひとときを提供します</p>
-
         <nav>
-          <ul>
+          <div class="logo">
+            <a href="index.html">居酒屋「青い鳥」</a>
+          </div>
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon">&#9776;</label>
+          <ul class="header-menu">
             <li><a href="index.html">ホーム</a></li>
             <li><a href="menu.html">メニュー</a></li>
             <li><a href="store.html">店舗情報</a></li>

@@ -4,43 +4,95 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* デスクトップ用のスタイル */
+
 header {
   background-color: #3b5998;
   padding: 20px;
   color: white;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
-h1 {
-  font-size: 24px;
+nav {
+  display: flex;
+  align-items: center;
+  /* background-color: #007bff; */
+  color: #fff;
+}
+
+.logo {
+  margin-right: auto;
+  padding: 10px;
+  font-weight: bold;
+}
+.logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-menu {
+  display: flex;
+  list-style: none;
   margin: 0;
-}
-
-p {
-  font-size: 16px;
-  margin: 0;
-  opacity: 0.8;
-}
-
-nav ul {
-  list-style-type: none;
   padding: 0;
-  margin: 20px 0;
-  text-align: center;
 }
 
-nav ul li {
-  display: inline-block;
+.header-menu li {
+  margin-left: 20px;
+}
+
+.header-menu li:first-child {
+  margin-left: 0;
+}
+
+.header-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* モバイル用のスタイル */
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
   margin-right: 10px;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 3px;
-}
+@media (max-width: 768px) {
+  .header-menu {
+    display: none;
+  }
 
-nav ul li a:hover {
-  background-color: #2a437a;
+  .menu-icon {
+    display: block;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .header-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 3;
+  }
+
+  #menu-toggle:checked ~ .header-menu li {
+    margin: 10px 0;
+  }
+
+  #menu-toggle:checked ~ .header-menu a {
+    color: #fff;
+  }
 }
