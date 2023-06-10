@@ -62,6 +62,9 @@ nav {
   margin-right: 10px;
 }
 
+#menu-toggle {
+  display: none;
+}
 @media (max-width: 768px) {
   .header-menu {
     display: none;
@@ -69,10 +72,6 @@ nav {
 
   .menu-icon {
     display: block;
-  }
-
-  #menu-toggle {
-    display: none;
   }
 
   #menu-toggle:checked ~ .header-menu {

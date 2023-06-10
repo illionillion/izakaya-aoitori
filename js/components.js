@@ -52,7 +52,7 @@ customElements.define("nav-header", HeaderComponent);
 customElements.define("contact-form", ContactForm);
 
 window.addEventListener("load", () => {
-  document.querySelector("form").addEventListener("submit", (e) => {
+  document.querySelector("form")?.addEventListener("submit", (e) => {
     e.preventDefault();
     alert("フォームを送信しました。");
     window.location.reload();
