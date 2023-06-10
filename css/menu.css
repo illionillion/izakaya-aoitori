@@ -1,0 +1,44 @@
+.menu-list {
+  margin-top: 20px;
+}
+.menu-list h2 {
+  text-align: center;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin: 0px auto 20px auto;
+  width: 75%;
+}
+
+.menu-item-image img {
+  max-width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.menu-item-details {
+  flex-grow: 1;
+}
+
+.menu-item h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.menu-item .menu-price {
+  color: red;
+}
+
+.menu-item .menu-description {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #888;
+}
+
+@media (width < 650px) {
+  .menu-item {
+    flex-direction: column;
+  }
+}

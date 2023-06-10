@@ -1,0 +1,26 @@
+/* 全体のスタイル */
+
+h2 {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.info-list {
+  list-style-type: none;
+  padding: 0;
+  padding: 0px 20px;
+}
+
+.info-list li {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.info-list li h3 {
+  margin-top: 0;
+}
+
+.info-list li p {
+  margin-bottom: 5px;
+}
