@@ -150,7 +150,7 @@
 
 /* 他のセクションのスタイルを追加していく */
 
-@media (width < 1000px) {
+@media (max-width : 1000px) {
   .banner .banner-text {
     width: 80%;
   }

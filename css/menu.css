@@ -37,7 +37,7 @@
   color: #888;
 }
 
-@media (width < 650px) {
+@media (max-width : 650px) {
   .menu-item {
     flex-direction: column;
   }
