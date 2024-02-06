@@ -34,6 +34,9 @@
   padding: 5px;
   margin-bottom: 10px;
 }
+.contact textarea {
+  resize: block;
+}
 
 .contact input[type="submit"] {
   padding: 10px 20px;
