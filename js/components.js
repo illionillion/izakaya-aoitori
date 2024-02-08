@@ -33,13 +33,13 @@ class ContactForm extends HTMLElement {
       </p>
       <form method="post" action="/contact.html">
         <label for="name">お名前:</label>
-        <input type="text" id="name" name="name" required />
+        <input type="text" id="name" name="name" placeholder="名前を入力" required />
 
         <label for="email">メールアドレス:</label>
-        <input type="email" id="email" name="email" required />
+        <input type="email" id="email" name="email" placeholder="メールアドレスを入力" required />
 
         <label for="message">メッセージ:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <textarea id="message" name="message" rows="4" placeholder="メッセージを入力" required></textarea>
 
         <input type="submit" value="送信" />
       </form>
