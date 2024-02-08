@@ -47,6 +47,10 @@
   padding: 20px;
 }
 
+@media (max-width: 412px) {
+
+}
+
 .service img {
   width: 100%;
   max-width: 300px;
@@ -60,6 +64,7 @@
 
 .service p {
   font-size: 14px;
+  padding-inline: 1rem;
 }
 
 .menu {
@@ -153,5 +158,19 @@
 @media (max-width : 1000px) {
   .banner .banner-text {
     width: 80%;
+  }
+}
+
+@media (max-width: 832px) {
+  .service, .menu-item {
+    display: block;
+    margin: auto;
+    padding-inline: 0;
+    padding-block: 10px 20px;
+    width: 100%;
+  }
+
+  .services, .menu, .store-info, .news {
+    padding-block: 25px;
   }
 }
