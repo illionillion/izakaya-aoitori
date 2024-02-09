@@ -50,3 +50,9 @@
 .contact input[type="submit"]:hover {
   background-color: #45a049;
 }
+
+@media (max-width: 832px) {
+  .contact {
+    padding-block: 25px;
+  }
+}
