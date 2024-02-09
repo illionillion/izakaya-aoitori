@@ -41,4 +41,11 @@
   .menu-item {
     flex-direction: column;
   }
+  .menu-item .menu-item-details {
+    max-width: 300px;
+    width: 100%;
+  }
+  .menu-item-image img {
+    margin: auto;
+  }
 }
