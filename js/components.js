@@ -10,7 +10,14 @@ class HeaderComponent extends HTMLElement {
           </div>
           <input type="checkbox" id="menu-toggle" />
           <label for="menu-toggle" class="menu-icon">&#9776;</label>
-          <ul class="header-menu">
+          <ul class="header-menu desktop">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="menu.html">メニュー</a></li>
+            <li><a href="store.html">店舗情報</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+          <ul class="header-menu mobile">
             <li><a href="index.html">ホーム</a></li>
             <li><a href="menu.html">メニュー</a></li>
             <li><a href="store.html">店舗情報</a></li>
