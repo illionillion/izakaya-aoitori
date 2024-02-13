@@ -103,7 +103,12 @@ nav {
     margin: 10px 0;
   }
 
+  #menu-toggle ~ .header-menu a {
+    pointer-events: none;
+  }
+  
   #menu-toggle:checked ~ .header-menu a {
     color: #fff;
+    pointer-events: all;
   }
 }
