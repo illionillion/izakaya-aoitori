@@ -28,13 +28,13 @@
 }
 
 .menu-item .menu-price {
-  color: red;
+  color: var(--menu-price-color);
 }
 
 .menu-item .menu-description {
   margin-top: 8px;
   font-size: 14px;
-  color: #888;
+  color: var(--menu-description-color);
 }
 
 @media (max-width : 650px) {
