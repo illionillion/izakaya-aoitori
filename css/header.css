@@ -7,9 +7,9 @@ body {
 /* デスクトップ用のスタイル */
 
 header {
-  background-color: #3b5998;
+  background-color: var(--header-bg-color);
   padding: 20px;
-  color: white;
+  color: var(--header-text-color);
   text-align: center;
   position: sticky;
   top: 0;
@@ -19,8 +19,7 @@ header {
 nav {
   display: flex;
   align-items: center;
-  /* background-color: #007bff; */
-  color: #fff;
+  color: var(--header-text-color);
 }
 
 .logo {
@@ -29,7 +28,7 @@ nav {
   font-weight: bold;
 }
 .logo a {
-  color: #fff;
+  color: var(--header-text-color);
   text-decoration: none;
 }
 
@@ -49,7 +48,7 @@ nav {
 }
 
 .header-menu a {
-  color: #fff;
+  color: var(--header-text-color);
   text-decoration: none;
 }
 
@@ -82,7 +81,7 @@ nav {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--header-menu-bg-color);
     top: 80px;
     left: 0;
     width: 100%;
@@ -108,7 +107,7 @@ nav {
   }
   
   #menu-toggle:checked ~ .header-menu a {
-    color: #fff;
+    color: var(--header-text-color);
     pointer-events: all;
   }
 }

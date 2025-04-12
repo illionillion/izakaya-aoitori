@@ -28,6 +28,7 @@
 }
 
 .contact input,
+.contact button,
 .contact textarea {
   width: 100%;
   max-width: 400px;
@@ -39,16 +40,16 @@
   resize: block;
 }
 
-.contact input[type="submit"] {
+.contact button[type="submit"] {
   padding: 10px 20px;
-  background-color: #4caf50;
-  color: #fff;
+  background-color: var(--button-primary-bg-color);
+  color: var(--button-text-color);
   border: none;
   cursor: pointer;
 }
 
-.contact input[type="submit"]:hover {
-  background-color: #45a049;
+.contact button[type="submit"]:hover {
+  background-color: var(--button-primary-bg-color-hover);
 }
 
 @media (max-width: 832px) {

@@ -48,7 +48,7 @@ class ContactForm extends HTMLElement {
         <label for="message">メッセージ:</label>
         <textarea id="message" name="message" rows="4" placeholder="メッセージを入力" required></textarea>
 
-        <input type="submit" value="送信" />
+        <button type="submit">送信</button>
       </form>
     </section>
     `;

@@ -14,7 +14,7 @@ h2 {
 .info-list li {
   margin-bottom: 20px;
   padding: 10px;
-  background-color: #f2f2f2;
+  background-color: var(--primary-bg-color);
 }
 
 .info-list li h3 {
